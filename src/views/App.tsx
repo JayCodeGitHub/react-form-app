@@ -1,9 +1,10 @@
 import React from "react";
+import Form from "../components/form";
 
 function App() {
   return (
     <main>
-      <h1>React form app</h1>
+      <Form />
     </main>
   );
 }
