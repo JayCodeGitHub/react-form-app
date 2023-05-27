@@ -3,7 +3,7 @@ import React from "react";
 function Form() {
   return (
     <form>
-      <h1>React form app</h1>
+      <h2>form</h2>
     </form>
   );
 }
