@@ -4,7 +4,7 @@ import Header from "../components/header";
 
 function App() {
   return (
-    <main>
+    <main className="bg-background-gradient">
       <Header />
       <Form />
     </main>
