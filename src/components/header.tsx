@@ -3,7 +3,7 @@ import React from "react";
 function Header() {
   return (
     <header>
-      <h1 className="text-[#000853] font-inter text-4xl text-center">
+      <h1 className=" font-inter text-4xl text-center text-dark-blue">
         Marathon <br className="md:hidden" />
         Application Form
       </h1>
