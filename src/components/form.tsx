@@ -108,19 +108,34 @@ function Form() {
       </div>
 
       {/* Level Input */}
-      <div>
-        <fieldset>
-          <legend>Level</legend>
-          <label>
-            <input type="radio" name="level" value="Beginner" />
+      <div className="w-full">
+        <fieldset className="w-full flex flex-col gap-3 text-dark-blue">
+          <legend className="mb-3 ">Level</legend>
+          <label className="flex items-center gap-2 text-base">
+            <input
+              type="radio"
+              name="level"
+              value="Beginner"
+              className=" w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
+            />
             Beginner
           </label>
-          <label>
-            <input type="radio" name="level" value="Intermediate" />
+          <label className="flex items-center gap-2 text-base">
+            <input
+              type="radio"
+              name="level"
+              value="Intermediate"
+              className=" w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
+            />
             Intermediate
           </label>
-          <label>
-            <input type="radio" name="level" value="Advanced" />
+          <label className="flex items-center gap-2 text-base ">
+            <input
+              type="radio"
+              name="level"
+              value="Advanced"
+              className=" w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
+            />
             Advanced
           </label>
         </fieldset>
