@@ -19,7 +19,8 @@ module.exports = {
         'dark-blue': '#000853',
         'white': '#FAF9FA',
         'hover-white': '#EEDFFF',
-        'purple': '#761BE4'
+        'purple': '#761BE4',
+        'grey': '#898DA9'
       }
     },
   },

@@ -55,9 +55,15 @@ function Form() {
       </div>
 
       {/* Photo Input */}
-      <div>
-        <label>Photo</label>
-        <input type="file" name="photo" />
+      <div className="flex flex-col items-start w-full gap-2">
+        <label className="text-dark-blue text-base font-inter">Photo</label>
+        <label className="flex w-full cursor-pointer items-center justify-center rounded-md p-10 bg-white">
+          <p className="text-purple underline text-base">Upload a file</p>
+          <p className="hidden text-base md:block text-grey pl-1">
+            or drag and drop here
+          </p>
+          <input type="file" name="photo" className="sr-only " />
+        </label>
       </div>
 
       {/* Age Input */}
