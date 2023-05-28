@@ -93,7 +93,7 @@ function Form() {
             </>
           ) : (
             <>
-              <p className="z-10 text-base underline cursor-pointer text-purple">
+              <p className="text-base underline cursor-pointer  text-purple">
                 Upload a file
               </p>
               <p className="hidden pl-1 text-base md:block text-grey">
@@ -104,7 +104,7 @@ function Form() {
           <input
             type="file"
             name="photo"
-            className="absolute top-0 left-0 w-full h-full opacity-0"
+            className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
             required
             onChange={handleImageSet}
           />
