@@ -2,7 +2,7 @@ import React from "react";
 
 function Form() {
   return (
-    <form>
+    <form className="flex flex-wrap w-full justify-end gap-6 p-6">
       {/* First Name Input */}
       <div className="flex flex-col items-start w-full gap-2">
         <label className="text-dark-blue text-base font-inter">
