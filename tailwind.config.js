@@ -5,6 +5,7 @@ module.exports = {
   ],
   theme: {
     fontSize: {
+      base: ['16px', '19px'],
       '4xl': ['36px', '44px'],
     },
     extend: {
@@ -15,7 +16,10 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
-        "dark-blue": "#000853"
+        'dark-blue': '#000853',
+        'white': '#FAF9FA',
+        'hover-white': '#EEDFFF',
+        'purple': '#761BE4'
       }
     },
   },

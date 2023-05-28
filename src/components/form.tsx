@@ -4,32 +4,53 @@ function Form() {
   return (
     <form>
       {/* First Name Input */}
-
-      <div>
-        <label>First Name</label>
-        <input type="text" id="firstName" required />
+      <div className="flex flex-col items-start w-full gap-2">
+        <label className="text-dark-blue text-base font-inter">
+          First Name
+        </label>
+        <input
+          type="text"
+          id="firstName"
+          required
+          className="h-12 rounded-lg w-full bg-white hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple text-base pl-1"
+        />
       </div>
 
       {/* Last Name Input */}
-      <div>
-        <label>Last Name</label>
-        <input type="text" name="lastName" required />
+      <div className="flex flex-col items-start w-full gap-2">
+        <label className="text-dark-blue text-base font-inter">Last Name</label>
+        <input
+          type="text"
+          name="lastName"
+          required
+          className="h-12 rounded-lg w-full bg-white hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple text-base pl-1"
+        />
       </div>
 
       {/* Email Input */}
-      <div>
-        <label>Email Address</label>
-        <input type="email" name="emailAddress" required />
+      <div className="flex flex-col items-start w-full gap-2">
+        <label className="text-dark-blue text-base font-inter">
+          Email Address
+        </label>
+        <input
+          type="email"
+          name="emailAddress"
+          required
+          className="h-12 rounded-lg w-full bg-white hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple text-base pl-1"
+        />
       </div>
 
       {/* Phone Number Input */}
-      <div>
-        <label>Phone Number</label>
+      <div className="flex flex-col items-start w-full gap-2">
+        <label className="text-dark-blue text-base font-inter">
+          Phone Number
+        </label>
         <input
           type="tel"
           name="phoneNumber"
           required
           pattern="\+\[0-9]{2} [0-9]{3} [0-9]{2} [0-9]{3}"
+          className="h-12 rounded-lg w-full bg-white hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple text-base pl-1"
         />
       </div>
 
