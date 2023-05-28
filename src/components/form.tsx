@@ -71,7 +71,7 @@ function Form() {
           <p className="hidden pl-1 text-base md:block text-grey">
             or drag and drop here
           </p>
-          <input type="file" name="photo" className="sr-only " />
+          <input type="file" name="photo" className="sr-only " required />
         </label>
       </div>
 
@@ -120,6 +120,7 @@ function Form() {
               type="radio"
               name="level"
               value="Beginner"
+              required
               className="w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
             />
             Beginner
@@ -129,6 +130,7 @@ function Form() {
               type="radio"
               name="level"
               value="Intermediate"
+              required
               className="w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
             />
             Intermediate
@@ -138,6 +140,7 @@ function Form() {
               type="radio"
               name="level"
               value="Advanced"
+              required
               className="w-5 h-5 bg-white hover:bg-white-hover hover:border-purple accent-purple"
             />
             Advanced
