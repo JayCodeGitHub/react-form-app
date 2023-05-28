@@ -9,6 +9,7 @@ module.exports = {
       base: ['16px', '19px'],
       lg: ['18px', '22px'],
       '4xl': ['36px', '44px'],
+      '5xl': ['48px', '58px']
     },
     extend: {
       backgroundImage: {
