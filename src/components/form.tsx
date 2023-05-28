@@ -6,6 +6,19 @@ function Form() {
   const handleRangeChange = (event: any) => {
     setRangeValue(event.target.value);
   };
+  const [image, setImage] = useState<boolean | null>(false);
+  const handleImageSet = (event: any) => {
+    if (event.target.files[0] === undefined) {
+      setImage(false);
+    } else {
+      setImage(event.target.files[0].name);
+    }
+  };
+
+  const handleImageRemove = () => {
+    setImage(false);
+  };
+
   return (
     <form
       className="flex flex-wrap w-full justify-end gap-6 p-6 md:w-[734px] md:bg-form-background md:rounded-2xl md:shadow-form-shadow md:pt-10 md:pb-12 md:px-12"
@@ -66,12 +79,35 @@ function Form() {
       {/* Photo Input */}
       <div className="flex flex-col items-start w-full gap-2">
         <label className="text-base text-dark-blue font-inter">Photo</label>
-        <label className="flex items-center justify-center w-full p-10 bg-white rounded-md cursor-pointer">
-          <p className="text-base underline text-purple">Upload a file</p>
-          <p className="hidden pl-1 text-base md:block text-grey">
-            or drag and drop here
-          </p>
-          <input type="file" name="photo" className="sr-only " required />
+        <label className="flex items-center justify-center w-full h-24 bg-white rounded-md cursor-pointer">
+          {image ? (
+            <>
+              <p className="text-dark-blue">{image}</p>
+              <a
+                onClick={handleImageRemove}
+                className="relative z-10 w-5 h-5 ml-4 transition-all rounded-full bg-dark-blue hover:bg-red"
+              >
+                <span className="w-0.5 h-3 bg-white rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+                <span className="w-0.5 h-3 bg-white -rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+              </a>
+            </>
+          ) : (
+            <>
+              <p className="z-10 text-base underline cursor-pointer text-purple">
+                Upload a file
+              </p>
+              <p className="hidden pl-1 text-base md:block text-grey">
+                or drag and drop here
+              </p>
+            </>
+          )}
+          <input
+            type="file"
+            name="photo"
+            className="sr-only"
+            required
+            onChange={handleImageSet}
+          />
         </label>
       </div>
 

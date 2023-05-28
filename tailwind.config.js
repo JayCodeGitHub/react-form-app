@@ -25,7 +25,8 @@ module.exports = {
         'hover-white': '#EEDFFF',
         'purple': '#761BE4',
         'purple-hover': '#6A19CD',
-        'grey': '#898DA9'
+        'grey': '#898DA9',
+        'red': '#ED4545'
       },
       boxShadow: {
         'form-shadow': ' 4px 4px 8px rgba(0, 0, 0, 0.05), inset 2px 2px 8px rgba(255, 255, 255, 0.25)',
