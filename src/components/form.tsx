@@ -142,7 +142,12 @@ function Form() {
       </div>
 
       {/* Submit */}
-      <button type="submit">Submit</button>
+      <button
+        type="submit"
+        className="bg-purple py-4 w-full mt-10 px-8 text-white text-lg rounded hover:bg-purple-hover transition-all"
+      >
+        Submit
+      </button>
     </form>
   );
 }

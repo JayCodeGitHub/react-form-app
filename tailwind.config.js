@@ -21,6 +21,7 @@ module.exports = {
         'white': '#FAF9FA',
         'hover-white': '#EEDFFF',
         'purple': '#761BE4',
+        'purple-hover': '#6A19CD',
         'grey': '#898DA9'
       }
     },
