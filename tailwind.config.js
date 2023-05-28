@@ -7,6 +7,7 @@ module.exports = {
     fontSize: {
       xs: ['12px', '15px'],
       base: ['16px', '19px'],
+      lg: ['18px', '22px'],
       '4xl': ['36px', '44px'],
     },
     extend: {
@@ -17,12 +18,16 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
       },
       colors: {
+        'form-background': 'rgba(255, 255, 255, 0.15)',
         'dark-blue': '#000853',
         'white': '#FAF9FA',
         'hover-white': '#EEDFFF',
         'purple': '#761BE4',
         'purple-hover': '#6A19CD',
         'grey': '#898DA9'
+      },
+      boxShadow: {
+        'form-shadow': ' 4px 4px 8px rgba(0, 0, 0, 0.05), inset 2px 2px 8px rgba(255, 255, 255, 0.25)',
       }
     },
   },

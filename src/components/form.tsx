@@ -7,7 +7,7 @@ function Form() {
     setRangeValue(event.target.value);
   };
   return (
-    <form className="flex flex-wrap w-full justify-end gap-6 p-6">
+    <form className="flex flex-wrap w-full justify-end gap-6 p-6 md:w-[734px] md:bg-form-background md:rounded-2xl md:shadow-form-shadow md:pt-10 md:pb-12 md:px-12">
       {/* First Name Input */}
       <div className="flex flex-col items-start w-full gap-2">
         <label className="text-dark-blue text-base font-inter">
