@@ -79,7 +79,7 @@ function Form() {
       {/* Photo Input */}
       <div className="flex flex-col items-start w-full gap-2">
         <label className="text-base text-dark-blue font-inter">Photo</label>
-        <label className="flex items-center justify-center w-full h-24 bg-white rounded-md cursor-pointer">
+        <label className="relative flex items-center justify-center w-full h-24 bg-white rounded-md cursor-pointer">
           {image ? (
             <>
               <p className="text-dark-blue">{image}</p>
@@ -104,7 +104,7 @@ function Form() {
           <input
             type="file"
             name="photo"
-            className="sr-only"
+            className="absolute top-0 left-0 w-full h-full opacity-0"
             required
             onChange={handleImageSet}
           />
