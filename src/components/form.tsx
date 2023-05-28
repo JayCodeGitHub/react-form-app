@@ -144,9 +144,9 @@ function Form() {
       {/* Submit */}
       <button
         type="submit"
-        className="bg-purple py-4 w-full mt-10 px-8 text-white text-lg rounded hover:bg-purple-hover transition-all"
+        className="bg-purple py-4 w-full md:w-auto mt-6 px-8 text-white text-lg rounded hover:bg-purple-hover transition-all"
       >
-        Submit
+        Send Application
       </button>
     </form>
   );
