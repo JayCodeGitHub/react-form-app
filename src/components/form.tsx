@@ -37,7 +37,7 @@ function Form() {
           type="text"
           id="firstName"
           required
-          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple focus:invalid:bg-light-red focus:invalid:border-red"
+          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple"
         />
       </div>
 
@@ -48,7 +48,7 @@ function Form() {
           type="text"
           name="lastName"
           required
-          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple focus:invalid:bg-light-red focus:invalid:border-red"
+          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple"
         />
       </div>
 
@@ -61,7 +61,7 @@ function Form() {
           type="email"
           name="emailAddress"
           required
-          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple focus:invalid:bg-light-red focus:invalid:border-red"
+          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple"
         />
       </div>
 
@@ -75,7 +75,7 @@ function Form() {
           name="phoneNumber"
           required
           pattern="\+\[0-9]{2} [0-9]{3} [0-9]{2} [0-9]{3}"
-          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple focus:invalid:bg-light-red focus:invalid:border-red"
+          className="w-full h-12 pl-1 text-base transition-all bg-white rounded-lg hover:bg-hover-white focus:bg-white focus:outline-none focus:border-2 focus:border-purple"
         />
       </div>
 
