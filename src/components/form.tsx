@@ -6,12 +6,14 @@ function Form() {
   const handleRangeChange = (event: ChangeEvent<HTMLInputElement>) => {
     setRangeValue(parseInt(event.target.value));
   };
-  const [image, setImage] = useState<boolean | null>(false);
-  const handleImageSet = (event: any) => {
-    if (event.target.files[0] === undefined) {
-      setImage(false);
-    } else {
-      setImage(event.target.files[0].name);
+  const [image, setImage] = useState<boolean | string>(false);
+  const handleImageSet = (event: ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      if (event.target.files[0] === undefined) {
+        setImage(false);
+      } else {
+        setImage(event.target.files[0].name);
+      }
     }
   };
 
