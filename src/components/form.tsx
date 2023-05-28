@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import Indicator from "../assets/Indicator.svg";
 
 function Form() {
+  const [rangeValue, setRangeValue] = useState(0);
+  const handleRangeChange = (event: any) => {
+    setRangeValue(event.target.value);
+  };
   return (
     <form className="flex flex-wrap w-full justify-end gap-6 p-6">
       {/* First Name Input */}
@@ -67,9 +72,14 @@ function Form() {
       </div>
 
       {/* Age Input */}
-      <div>
-        <label>Age</label>
+      <div className="flex flex-col items-start w-full">
+        <label className="text-dark-blue text-base font-inter mb-2">Age</label>
+        <span className="w-full flex justify-between text-dark-blue text-xs font-inter pl-1">
+          <p>0</p>
+          <p>100</p>
+        </span>
         <input
+          className="w-full accent-purple appearance-none h-1.5 mt-1.5 rounded-lg"
           type="range"
           name="age"
           min="0"
@@ -77,7 +87,24 @@ function Form() {
           defaultValue="0"
           step="1"
           required
+          onChange={handleRangeChange}
         />
+        <span
+          className="relative h-8 m-auto md:h-6 "
+          style={{ width: `calc(100% - 15px)` }}
+        >
+          <span
+            className="absolute top-2"
+            style={{ left: `calc(${rangeValue}% - 19px)` }}
+          >
+            <span className="relative">
+              <span className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/4 z-10 text-purple text-xs">
+                {rangeValue}
+              </span>
+              <img src={Indicator} className="max-w-none" />
+            </span>
+          </span>
+        </span>
       </div>
 
       {/* Level Input */}
