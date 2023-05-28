@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import Indicator from "../assets/Indicator.svg";
 
 function Form() {
   const [rangeValue, setRangeValue] = useState(0);
-  const handleRangeChange = (event: any) => {
-    setRangeValue(event.target.value);
+  const handleRangeChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setRangeValue(parseInt(event.target.value));
   };
   const [image, setImage] = useState<boolean | null>(false);
   const handleImageSet = (event: any) => {
