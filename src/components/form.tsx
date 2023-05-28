@@ -93,7 +93,7 @@ function Form() {
             </>
           ) : (
             <>
-              <p className="text-base underline cursor-pointer  text-purple">
+              <p className="text-base underline cursor-pointer text-purple">
                 Upload a file
               </p>
               <p className="hidden pl-1 text-base md:block text-grey">
@@ -130,7 +130,7 @@ function Form() {
           onChange={handleRangeChange}
         />
         <span
-          className="relative h-8 m-auto md:h-6 "
+          className="relative h-8 m-auto mb-1.5 md:h-6"
           style={{ width: `calc(100% - 15px)` }}
         >
           <span
