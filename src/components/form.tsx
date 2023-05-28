@@ -9,7 +9,7 @@ function Form() {
   return (
     <form className="flex flex-wrap w-full justify-end gap-6 p-6 md:w-[734px] md:bg-form-background md:rounded-2xl md:shadow-form-shadow md:pt-10 md:pb-12 md:px-12">
       {/* First Name Input */}
-      <div className="flex flex-col items-start w-full gap-2">
+      <div className="flex flex-col items-start w-full gap-2 md:w-[48%]">
         <label className="text-dark-blue text-base font-inter">
           First Name
         </label>
@@ -22,7 +22,7 @@ function Form() {
       </div>
 
       {/* Last Name Input */}
-      <div className="flex flex-col items-start w-full gap-2">
+      <div className="flex flex-col items-start w-full gap-2 md:w-[48%]">
         <label className="text-dark-blue text-base font-inter">Last Name</label>
         <input
           type="text"
@@ -33,7 +33,7 @@ function Form() {
       </div>
 
       {/* Email Input */}
-      <div className="flex flex-col items-start w-full gap-2">
+      <div className="flex flex-col items-start w-full gap-2 md:w-[48%]">
         <label className="text-dark-blue text-base font-inter">
           Email Address
         </label>
@@ -46,7 +46,7 @@ function Form() {
       </div>
 
       {/* Phone Number Input */}
-      <div className="flex flex-col items-start w-full gap-2">
+      <div className="flex flex-col items-start w-full gap-2 md:w-[48%]">
         <label className="text-dark-blue text-base font-inter">
           Phone Number
         </label>
